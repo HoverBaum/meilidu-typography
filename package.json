@@ -1,0 +1,25 @@
+{
+  "name": "meilidu-typography",
+  "version": "0.1.0",
+  "description": "Basic MeiliDu typography. Beautiful reads on the web.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylus:watch": "stylus stylus/style.styl -o test/website/css/style.css -w",
+    "stylus": "stylus stylus/style.styl -o test/website/css/style.css",
+    "serve": "live-server test/website",
+    "dev": "concurrently --kill-others \"npm run stylus:watch\" \"npm run serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoverBaum/meilidu-typography.git"
+  },
+  "author": "Hendrik Wallbaum",
+  "bugs": {
+    "url": "https://github.com/HoverBaum/meilidu-typography/issues"
+  },
+  "homepage": "https://github.com/HoverBaum/meilidu-typography#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "stylus": "^0.54.5"
+  }
+}
