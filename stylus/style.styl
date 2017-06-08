@@ -3,5 +3,19 @@
     This file will agregate other files.
 */
 
-h1
-    color: red
+@import "variables"
+
+@import "fontScaling"
+@import "underline"
+
+html, body
+    background-color: backgroundColor
+    color: textColor
+    font-family: fontsSans
+
+h1, h2, h3, h4 ,h5
+    color: highlightColor
+
+a
+    text-decoration: none
+    link-underline(backgroundColor, mainColor, greyishBlue)
